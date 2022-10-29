@@ -1,8 +1,13 @@
 import React from "react";
 import "./Share.css";
+import { RiShareForwardLine } from "react-icons/ri";
 
 function Share() {
-  return <div>{/* <h1>Share</h1> */}</div>;
+  return (
+    <>
+      <RiShareForwardLine className="share" />
+    </>
+  );
 }
 
 export default Share;
