@@ -12,7 +12,7 @@ function Profile() {
         alt=""
       />
       <p id="twitter" className="twitter-username">
-        Amadi Chiazamoku
+        Chiazamoku Amadi
       </p>
       <p id="slack" className="slack-username">
         Chiazamoku Amadi
