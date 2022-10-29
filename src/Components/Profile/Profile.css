@@ -1,0 +1,18 @@
+.profile-picture {
+  width: 88px;
+  height: 88px;
+  border-radius: 50px;
+}
+
+.twitter-username {
+  font-weight: 700;
+  font-size: 20px;
+  color: #101828;
+}
+
+.slack-username {
+  font-weight: 700;
+  font-size: 20px;
+  color: #101828;
+  display: none;
+}
