@@ -3,3 +3,22 @@
   font-size: 16px;
   color: #667085;
 }
+
+.inner-section-footer {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eaecf0;
+  padding: 1.5rem 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .inner-section-footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-top: 2px solid #eaecf0;
+    gap: 1.5rem;
+  }
+}

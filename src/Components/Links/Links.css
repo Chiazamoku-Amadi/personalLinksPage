@@ -8,3 +8,9 @@
   font-weight: 500;
   font-size: 18px;
 }
+
+@media only screen and (max-width: 600px) {
+  .button-links {
+    font-size: 14px;
+  }
+}

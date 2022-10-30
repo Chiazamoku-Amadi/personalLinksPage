@@ -5,11 +5,11 @@ import I4GLogo from "../../assets/I4G.webp";
 
 function Footer() {
   return (
-    <>
+    <section className="inner-section-footer">
       <img src={zuriLogo} alt="" />
       <p className="footer-text">HNG Internship 9 Frontend Task</p>
       <img src={I4GLogo} alt="" />
-    </>
+    </section>
   );
 }
 

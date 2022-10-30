@@ -1,6 +1,7 @@
 import "./App.css";
 import Profile from "./Components/Profile/Profile";
 import Share from "./Components/Share/Share";
+import ShareMobile from "./Components/ShareMobile/ShareMobile";
 import Links from "./Components/Links/Links";
 import Social from "./Components/Social/Social";
 import Footer from "./Components/Footer/Footer";
@@ -13,6 +14,9 @@ function App() {
       </section>
       <div className="share-btn">
         <Share />
+      </div>
+      <div className="share-btn-mobile">
+        <ShareMobile />
       </div>
       <section className="links-section">
         <Links />
