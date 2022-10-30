@@ -1,11 +1,14 @@
 import React from "react";
 import "./Social.css";
+import slack from "../../assets/slack__icon.webp";
+import github from "../../assets/github__icon.webp";
 
 function Social() {
   return (
-    <div>
-      <h1>Social</h1>
-    </div>
+    <>
+      <img src={slack} alt="" className="slack-icon" />
+      <img src={github} alt="" className="github-icon" />
+    </>
   );
 }
 

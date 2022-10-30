@@ -6,16 +6,16 @@ function Profile() {
   return (
     <>
       <img
-        id="profile__img"
-        className="profile-picture"
         src={profilePicture}
         alt=""
+        id="profile__img"
+        className="profile-picture"
       />
       <p id="twitter" className="twitter-username">
-        Chiazamoku Amadi
+        aza_jenny25
       </p>
       <p id="slack" className="slack-username">
-        Chiazamoku Amadi
+        Chiazam
       </p>
     </>
   );
