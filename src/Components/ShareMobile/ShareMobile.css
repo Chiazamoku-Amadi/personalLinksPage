@@ -1,4 +1,8 @@
 .share-mobile {
   color: #98a2b3;
-  font-size: 30px;
+  font-size: 25px;
+}
+
+.share-mobile:hover {
+  color: #667085;
 }

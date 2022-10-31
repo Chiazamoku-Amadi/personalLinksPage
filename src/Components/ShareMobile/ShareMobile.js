@@ -1,11 +1,11 @@
 import React from "react";
 import "./ShareMobile.css";
-import { IoEllipsisHorizontalCircleOutline } from "react-icons/io5";
+import { AiOutlineEllipsis } from "react-icons/ai";
 
 function ShareMobile() {
   return (
     <>
-      <IoEllipsisHorizontalCircleOutline className="share-mobile" />
+      <AiOutlineEllipsis className="share-mobile" />
     </>
   );
 }

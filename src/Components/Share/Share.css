@@ -1,3 +1,7 @@
 .share {
   color: #98a2b3;
 }
+
+.share:hover {
+  color: #667085;
+}

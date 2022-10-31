@@ -13,7 +13,7 @@
   padding: 1.5rem 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .inner-section-footer {
     flex-direction: column;
     justify-content: center;

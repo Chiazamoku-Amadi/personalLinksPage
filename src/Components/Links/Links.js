@@ -38,6 +38,7 @@ function Links() {
   const button = buttonData.map((btn) => {
     return (
       <a
+        key={btn.id}
         href={btn.link}
         target="_blank"
         rel="noopener noreferrer"

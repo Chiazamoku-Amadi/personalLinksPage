@@ -14,12 +14,7 @@ function Profile() {
           className="profile-picture"
         />
         <div className="overlay fadeEffect">
-          <img
-            src={camera}
-            alt=""
-            id="profile__img"
-            className="profile-picture"
-          />
+          <img src={camera} alt="" />
         </div>
       </div>
       <p id="twitter" className="twitter-username">
