@@ -1,7 +1,47 @@
+.picture-container {
+  width: 88px;
+  position: relative;
+}
+
 .profile-picture {
   width: 88px;
   height: 88px;
   border-radius: 50px;
+}
+
+.overlay {
+  border-radius: 50px;
+  position: absolute;
+  background: linear-gradient(
+    0deg,
+    rgba(52, 64, 84, 0.75),
+    rgba(52, 64, 84, 0.75)
+  );
+  transition: all 0.5s ease;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture-container:hover .overlay {
+  opacity: 0.8;
+}
+
+.fadeEffect {
+  width: 88px;
+  bottom: 3px;
+  top: 0;
+}
+
+.picture-container:hover .fadeEffect {
+  height: 88px;
+}
+
+.overlay img {
+  width: 24px;
+  height: 24px;
+  margin-top: 2.5rem;
 }
 
 .twitter-username {
