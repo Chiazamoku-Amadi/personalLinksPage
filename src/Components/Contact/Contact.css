@@ -101,6 +101,21 @@ textarea:focus {
   color: #101828;
 }
 
+.error {
+  color: #f83f23;
+  font-weight: 400;
+  font-size: 14px;
+  display: none;
+}
+
+textarea:invalid[focused="true"] ~ .error {
+  display: block;
+}
+
+textarea:invalid[focused="true"] {
+  border: 1px solid #f89687;
+}
+
 .checkbox {
   display: flex;
   gap: 0.5rem;
