@@ -24,6 +24,7 @@ function Contact() {
               placeholder="Enter your first name"
               className="first-name"
               name="firstName"
+              value={formData.firstName}
             />
           </div>
           <div className="field">
@@ -34,6 +35,7 @@ function Contact() {
               placeholder="Enter your last name"
               className="last-name"
               name="lastName"
+              value={formData.lastName}
             />
           </div>
         </section>
@@ -45,6 +47,7 @@ function Contact() {
             placeholder="yourname@email.com"
             className="email"
             name="email"
+            value={formData.email}
           />
         </div>
         <div className="field">
@@ -54,10 +57,16 @@ function Contact() {
             placeholder="Send me a message and I'll reply you as soon as possible..."
             rows={5}
             name="message"
+            value={formData.message}
           />
         </div>
         <div className="checkbox">
-          <input id="checkbox" type="checkbox" name="agreed" />
+          <input
+            id="checkbox"
+            type="checkbox"
+            name="agreed"
+            value={formData.agreed}
+          />
           <label htmlFor="checkbox">
             You agree to providing your data to Chiazamoku who may contact you.
           </label>
