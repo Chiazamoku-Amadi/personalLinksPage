@@ -87,16 +87,64 @@
 }
 
 .checkbox > input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.check {
+  position: absolute;
+  top: 34rem;
+  left: 11.5rem;
+  height: 25px;
+  width: 25px;
+  background-color: #ffffff;
   border: 1px solid #d0d5dd;
   border-radius: 6px;
-  background-color: #ffffff;
-  width: 20px;
-  height: 20px;
   cursor: pointer;
+}
+
+.checkbox:hover input ~ .check {
+  background-color: #f9fafb;
+  border: 1px solid #1570ef;
+  border-radius: 6px;
+}
+
+.checkbox:active input ~ .check {
+  border: 1px solid #84caff;
+  box-shadow: 0px 0px 0px 4px #d1e9ff;
+}
+
+.checkbox:disabled input ~ .check {
+  background: #f2f4f7;
+  border: 1px solid #d0d5dd;
+}
+
+.check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox input:checked ~ .check:after {
+  display: block;
+}
+
+.checkbox .check:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: 2px solid #1570ef;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .checkbox > label {
   cursor: pointer;
+  margin-left: 2rem;
 }
 
 button {
@@ -110,6 +158,21 @@ button {
   border-radius: 8px;
   padding: 0.5rem 0.8rem;
   cursor: pointer;
+}
+
+button:hover {
+  background-color: #175cd3;
+  border: 1px solid #175cd3;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #d1e9ff;
+}
+
+button:disabled {
+  background-color: #b2ddff;
+  border: 1px solid #b2ddff;
 }
 
 @media only screen and (max-width: 800px) {
