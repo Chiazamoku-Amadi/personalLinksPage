@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Links.css";
 
 function Links() {
@@ -50,7 +51,14 @@ function Links() {
     );
   });
 
-  return <>{button}</>;
+  return (
+    <>
+      {button}
+      <Link to="/contact" id="contact" className="button-links">
+        Contact Us
+      </Link>
+    </>
+  );
 }
 
 export default Links;
