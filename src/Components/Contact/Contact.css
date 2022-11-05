@@ -1,0 +1,16 @@
+.contact-me {
+  grid-column: 3 / 6;
+  grid-row: 3 / 5;
+}
+
+.contact-me > h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #101828;
+}
+
+.contact-me > p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #475467;
+}
