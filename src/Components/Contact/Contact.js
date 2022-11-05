@@ -20,11 +20,15 @@ function Contact() {
     });
   }
 
+  function handleSubmit(event) {
+    event.preventDefault();
+  }
+
   return (
     <div className="contact-me">
       <h2>Contact Me</h2>
       <p>Hi there, contact me to ask me about anything you have in mind.</p>
-      <form className="form">
+      <form className="form" onSubmit={handleSubmit}>
         <section className="name-fields">
           <div className="field">
             <label htmlFor="first_name">First name</label>
