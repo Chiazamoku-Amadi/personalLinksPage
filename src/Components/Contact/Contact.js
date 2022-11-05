@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 
 function Contact() {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: "",
+    agreed: false,
+  });
+
   return (
     <div className="contact-me">
       <h2>Contact Me</h2>
@@ -15,6 +23,7 @@ function Contact() {
               type="text"
               placeholder="Enter your first name"
               className="first-name"
+              name="firstName"
             />
           </div>
           <div className="field">
@@ -24,6 +33,7 @@ function Contact() {
               type="text"
               placeholder="Enter your last name"
               className="last-name"
+              name="lastName"
             />
           </div>
         </section>
@@ -34,6 +44,7 @@ function Contact() {
             type="email"
             placeholder="yourname@email.com"
             className="email"
+            name="email"
           />
         </div>
         <div className="field">
@@ -42,10 +53,11 @@ function Contact() {
             id="message"
             placeholder="Send me a message and I'll reply you as soon as possible..."
             rows={5}
+            name="message"
           />
         </div>
         <div className="checkbox">
-          <input id="checkbox" type="checkbox" />
+          <input id="checkbox" type="checkbox" name="agreed" />
           <label htmlFor="checkbox">
             You agree to providing your data to Chiazamoku who may contact you.
           </label>
