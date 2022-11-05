@@ -11,10 +11,11 @@ function Contact() {
   });
 
   function handleChange(event) {
+    const { name, value, type, checked } = event.target;
     setFormData((prevFormData) => {
       return {
         ...prevFormData,
-        [event.target.name]: event.target.value,
+        [name]: type === "checkbox" ? checked : value,
       };
     });
   }
