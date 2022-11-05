@@ -10,6 +10,15 @@ function Contact() {
     agreed: false,
   });
 
+  function handleChange(event) {
+    setFormData((prevFormData) => {
+      return {
+        ...prevFormData,
+        [event.target.name]: event.target.value,
+      };
+    });
+  }
+
   return (
     <div className="contact-me">
       <h2>Contact Me</h2>
@@ -25,6 +34,7 @@ function Contact() {
               className="first-name"
               name="firstName"
               value={formData.firstName}
+              onChange={handleChange}
             />
           </div>
           <div className="field">
@@ -36,6 +46,7 @@ function Contact() {
               className="last-name"
               name="lastName"
               value={formData.lastName}
+              onChange={handleChange}
             />
           </div>
         </section>
@@ -48,6 +59,7 @@ function Contact() {
             className="email"
             name="email"
             value={formData.email}
+            onChange={handleChange}
           />
         </div>
         <div className="field">
@@ -58,6 +70,7 @@ function Contact() {
             rows={5}
             name="message"
             value={formData.message}
+            onChange={handleChange}
           />
         </div>
         <div className="checkbox">
@@ -65,7 +78,8 @@ function Contact() {
             id="checkbox"
             type="checkbox"
             name="agreed"
-            value={formData.agreed}
+            checked={formData.agreed}
+            onChange={handleChange}
           />
           <label htmlFor="checkbox">
             You agree to providing your data to Chiazamoku who may contact you.
