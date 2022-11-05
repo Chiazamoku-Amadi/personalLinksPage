@@ -40,6 +40,7 @@ function Contact() {
               name="firstName"
               value={formData.firstName}
               onChange={handleChange}
+              required
             />
           </div>
           <div className="field">
@@ -52,6 +53,7 @@ function Contact() {
               name="lastName"
               value={formData.lastName}
               onChange={handleChange}
+              required
             />
           </div>
         </section>
@@ -65,6 +67,7 @@ function Contact() {
             name="email"
             value={formData.email}
             onChange={handleChange}
+            required
           />
         </div>
         <div className="field">
@@ -76,6 +79,7 @@ function Contact() {
             name="message"
             value={formData.message}
             onChange={handleChange}
+            required
           />
         </div>
         <div className="checkbox">
@@ -85,6 +89,7 @@ function Contact() {
             name="agreed"
             checked={formData.agreed}
             onChange={handleChange}
+            required
           />
           <span className="check"></span>
           <label htmlFor="checkbox">
