@@ -4,13 +4,11 @@ import Footer from "../Footer/Footer";
 
 function Landing() {
   return (
-    <div>
-      <div className="container">
-        <Outlet />
-        <footer className="footer-section">
-          <Footer />
-        </footer>
-      </div>
+    <div className="container">
+      <Outlet />
+      <footer className="footer-section">
+        <Footer />
+      </footer>
     </div>
   );
 }
