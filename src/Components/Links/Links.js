@@ -55,7 +55,7 @@ function Links() {
     <>
       {button}
       <Link to="/contact" id="contact" className="button-links">
-        Contact Us
+        Contact Me
       </Link>
     </>
   );
