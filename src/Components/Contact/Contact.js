@@ -10,6 +10,12 @@ function Contact() {
     agreed: false,
   });
 
+  const [focused, setFocused] = useState(false);
+
+  function handleFocus() {
+    setFocused(true);
+  }
+
   function handleChange(event) {
     const { name, value, type, checked } = event.target;
     setFormData((prevFormData) => {
@@ -79,8 +85,11 @@ function Contact() {
             name="message"
             value={formData.message}
             onChange={handleChange}
+            onBlur={handleFocus}
+            focused={focused.toString()}
             required
           />
+          <span className="error">Please enter a message</span>
         </div>
         <div className="checkbox">
           <input
