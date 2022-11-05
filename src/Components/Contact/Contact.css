@@ -4,13 +4,34 @@
 }
 
 .contact-me > h2 {
-  font-size: 36px;
   font-weight: 600;
+  font-size: 36px;
   color: #101828;
 }
 
 .contact-me > p {
-  font-size: 20px;
   font-weight: 400;
+  font-size: 20px;
   color: #475467;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.field > label {
+  font-weight: 500;
+  font-size: 14px;
+  color: #344054;
+}
+
+.field > input {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #667085;
+  padding: 0.5rem 0;
+  text-indent: 0.5rem;
 }
