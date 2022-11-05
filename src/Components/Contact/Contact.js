@@ -6,7 +6,7 @@ function Contact() {
     <div className="contact-me">
       <h2>Contact Me</h2>
       <p>Hi there, contact me to ask me about anything you have in mind.</p>
-      <form>
+      <form className="form">
         <section className="name-fields">
           <div className="field">
             <label htmlFor="first_name">First name</label>
