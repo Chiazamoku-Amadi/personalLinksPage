@@ -86,6 +86,7 @@ function Contact() {
             checked={formData.agreed}
             onChange={handleChange}
           />
+          <span className="check"></span>
           <label htmlFor="checkbox">
             You agree to providing your data to Chiazamoku who may contact you.
           </label>
