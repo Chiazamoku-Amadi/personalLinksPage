@@ -105,7 +105,7 @@ function Contact() {
             You agree to providing your data to Chiazamoku who may contact you.
           </label>
         </div>
-        <button>Send Message</button>
+        <button id="btn__submit">Send Message</button>
       </form>
     </div>
   );
